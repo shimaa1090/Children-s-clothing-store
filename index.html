@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>إدارة المنتجات</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+
+  <div class="product-form">
+    <h2>إضافــة منتــج جـديـد</h2>
+
+    <input type="text" required id="product-name" placeholder="اسم المنتج" />
+    <input type="number" required id="product-price" placeholder="السعر بالجنيه المصري" />
+    <input type="text" required id="product-desc" placeholder="وصف المنتج" />
+    <input type="text" required id="product-lang" placeholder="اللغة (عربي، إنجليزي)" />
+       <br> <button type="addProduct">إضافــة المنتــج</button>
+    <br/>
+
+  </div>
+
+  <div class="product-list">
+    <h2>قائمــة المنتجــات</h2>
+    <ul id="products-container">
+      <!-- سيتم إضافة المنتجات هنا -->
+       <div class="category-buttons">
+  <button onclick="showCategory('girls')">👧 أطفـالي - بنـات</button>
+  <button onclick="showCategory('boys')">👦 أطفـالي - أولاد</button>
+</div>
+    </ul>
+  </div>
+
+<!-- أقسام البنات -->
+<div id="girls" class="product-category" style="display:none;">
+  <h4>👧 منتجات البنات:</h4>
+  
+
+  <button class="accordion-btn">👗 فستان للخروج والمناسبات البسيطة </button>
+  <div class="accordion-panel">
+    <img src="dress1.jpg" alt="image">
+    <p>💰 السعر: 480 جنيه</p>
+    <p>📝 الوصف: فستان مشجر شيفون بألوان جذابةابة للخروجات والمناسبات البسيطة</p>
+  </div>
+
+  <button class="accordion-btn">👗✨ فستان هاند ميد</button>
+  <div class="accordion-panel">
+    <img src="dress2.jpg" alt="image">
+    <p>💰 السعر: 550 جنيه</p>
+    <p>📝 الوصف: فستان هاند ميد بأشكال جذابة</p>
+  </div>
+
+  <button class="accordion-btn">👖 بنطلون بناتي مشجر</button>
+  <div class="accordion-panel">
+    <img src="pant.g.jpg" alt="image">
+    <p>💰 السعر: 130 جنيه</p>
+    <p>📝الوصف:  بنطلون بناتي مشجر للخروجات والمصيف</p>
+  </div>
+
+
+
+</div>
+
+<!-- أقسام الأولاد -->
+<div id="boys" class="product-category" style="display:none;">
+
+<div class="accordion">
+  <h3>منتجات أولادي :</h3>
+
+  <button class="accordion-btn">👖 بنطلون أولادي</button>
+  <div class="accordion-panel">
+    <img src="pant.b.jpg" alt="image">
+    <p>💰 السعر: 350 جنيه</p>
+    <p>📝 الوصف: بنطلون مريح للأطفال للمدرسة والبيت</p>
+  </div>
+
+  <button class="accordion-btn">👕 تيشيرت مطبوع</button>
+  <div class="accordion-panel">
+    <img src="t.shirt.jpg" alt="image">
+    <p>💰 السعر: 320 جنيه</p>
+    <p>📝 الوصف: تيشيرت برسومات كرتونية ممتعة</p>
+  </div>
+
+  <button class="accordion-btn">👕تيشيرت قطن ألوان</button>
+  <div class="accordion-panel">
+    <img src="t.shirt cotton.jpg" alt="image">
+    <p>💰 السعر: 180 جنيه</p>
+    <p>📝  الوصف:  تيشيرت قطن ألوان مريح ومناسب لجلد الأطفال</p>
+  </div>
+
+
+</div>
+  </ul>
+  
+</div>
+
+
+       <input type="text" required id="search-input" placeholder="ابحث عن منتج..." />
+  <button id="search-button">بحــــث</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
